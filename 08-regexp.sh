@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Texte" texte
+read -p "Texte: " text
 
-if test $text =~ ^[0-9]+$
+if [[ $text =~ ^[0-9]+$ ]]
 then
 	echo "$text est un  Chiffre"
 fi
